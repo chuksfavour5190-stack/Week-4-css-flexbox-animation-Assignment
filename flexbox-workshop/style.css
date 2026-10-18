@@ -1,0 +1,62 @@
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color:blue;
+}
+
+.box {
+  width: 28%;
+  height: 150px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 1.125rem;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  width: 70%;
+  min-height: 600px;
+  padding: 10px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  box-sizing: border-box;
+}
+
+.box1 {
+  background: red;
+  order: 1;
+}
+
+.box2 {
+  background: orange;
+  order: 2;
+}
+
+.box3 {
+  background: yellow;
+  order: 3;
+}
+
+.box4 {
+  background: green;
+  order: 4;
+}
+
+.box5 {
+  background:blue;
+  order: 5;
+}
+
+.box6 {
+  background: purple;
+  order: 6;
+}

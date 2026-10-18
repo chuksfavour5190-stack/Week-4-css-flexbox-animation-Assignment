@@ -1,0 +1,117 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf6ff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1 {
+    color: #24527a;
+}
+
+.wheel {
+    width: 300px;
+    height: 300px;
+    border: 6px solid #24527a;
+    border-radius: 50%;
+    position: relative;
+    margin: 40px auto 0;
+    animation: spin 10s linear infinite;
+}
+
+.line {
+    width: 6px;
+    height: 100%;
+    background-color: #24527a;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.line2 {
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.line3 {
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.line4 {
+    transform: translateX(-50%) rotate(135deg);
+}
+
+.cabin {
+    width: 35px;
+    height: 35px;
+    background-color: #ff9f43;
+    border: 3px solid white;
+    border-radius: 8px;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.cabin1 {
+    top: -15px;
+    left: calc(50% - 17px);
+}
+
+.cabin2 {
+    top: 16%;
+    right: 5%;
+}
+
+.cabin3 {
+    top: calc(50% - 17px);
+    right: -15px;
+}
+
+.cabin4 {
+    bottom: 16%;
+    right: 5%;
+}
+
+.cabin5 {
+    bottom: -15px;
+    left: calc(50% - 17px);
+}
+
+.cabin6 {
+    top: 16%;
+    left: 5%;
+}
+
+.center {
+    width: 25px;
+    height: 25px;
+    background-color: #24527a;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 12.5px);
+    left: calc(50% - 12.5px);
+}
+
+.stand {
+    width: 10px;
+    height: 100px;
+    background-color: #24527a;
+    margin: auto;
+}
+
+.base {
+    width: 160px;
+    height: 10px;
+    background-color: #24527a;
+    margin: auto;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

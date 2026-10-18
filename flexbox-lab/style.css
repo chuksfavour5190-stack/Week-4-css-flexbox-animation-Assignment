@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5fb;
+    color: #1d2340;
+    padding: 50px 20px;
+}
+
+
+body > h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #171c3a;
+}
+
+body > p {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+
+.price {
+    min-height: 70px;
+
+}
+
+.features {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.features ul {
+    list-style: none;
+}
+
+.features li {
+    margin-bottom: 15px;
+}
+
+.features li::before {
+    content: "✓";
+    color: goldenrod;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+button {
+    padding: 12px;
+    background-color: #252b50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #16856b;
+    color: white;
+}
+
+.popular {
+    background-color: #252b50;
+    color: white;
+    border: 2px solid #e6b84c;
+}
+
+.popular .header p:first-of-type {
+    display: inline-block;
+    background-color: #e6b84c;
+    color: #252b50;
+    padding: 2px 12px;
+    border: 1px solid #e6b84c;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.popular button {
+    background-color: #e6b84c;
+    color: #252b50;
+}
+
+.popular button:hover {
+    background-color: white;
+    color: #252b50;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product:focus-within {
+    outline: 3px solid #e6b84c;
+}
+
+@media (max-width: 700px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
